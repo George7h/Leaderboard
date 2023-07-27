@@ -1,5 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=REM&family=Short+Stack&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Short Stack', cursive;
+}
+
+button {
+  border: solid black 2px;
+  box-shadow: 4px 3px 0 0 rgba(0, 0, 0, 0.8);
+  padding: 4px 2px 2px 2px;
+  font-family: 'Short Stack', cursive;
+}
+
+button:active {
+  margin: 4px 0 0 4px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+}
+
+main {
+  margin-top: 20%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 1rem;
+  padding: 20px 20px 30px 20px;
+  border: solid black 2px;
+  box-shadow: 4px 3px 0 0 rgba(0, 0, 0, 0.8);
+}
+
+.contain {
+  display: flex;
+  gap: 5rem;
+  padding: 10px 0 0 20px;
+}
+
+.scores {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Recent {
+  display: flex;
+  gap: 50px;
+}
+
+.refresh {
+  height: min-content;
+}
+
+.scorelist {
+  list-style: none;
+  border: solid black 2px;
+  box-shadow: 4px 3px 0 0 rgba(0, 0, 0, 0.8);
+}
+
+.scorelist > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.scorelist > li:nth-child(even) {
+  background-color: #ddd;
+}
+
+.addscores {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#submit {
+  display: flex;
+  align-self: flex-end;
+}
+
+input::placeholder {
+  font-weight: bold;
+  font-family: 'Short Stack', cursive;
+}
+
+input {
+  padding: 4px;
+  border: solid 2px;
 }
