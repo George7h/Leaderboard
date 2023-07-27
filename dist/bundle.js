@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _modules_list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/list.js */ \"./src/modules/list.js\");\n\r\n\r\n\r\n(0,_modules_list_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]) ();\r\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _modules_list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/list.js */ \"./src/modules/list.js\");\n\n\n\n(0,_modules_list_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
 
 /***/ }),
 
@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst result = [\r\n  {\r\n    user: 'Name: ',\r\n    score: 100,\r\n  },\r\n  {\r\n    user: 'Name: ',\r\n    score: 20,\r\n  },\r\n  {\r\n    user: 'Name: ',\r\n    score: 50,\r\n  },\r\n  {\r\n    user: 'Name: ',\r\n    score: 78,\r\n  },\r\n  {\r\n    user: 'Name: ',\r\n    score: 125,\r\n  },\r\n  {\r\n    user: 'Name: ',\r\n    score: 77,\r\n  },\r\n  {\r\n    user: 'Name: ',\r\n    score: 42,\r\n  },\r\n];\r\n\r\nconst scoreList = () => {\r\n  const scoreUl = document.createElement('ul');\r\n  scoreUl.className = 'scorelist';\r\n  result.forEach((data) => {\r\n    scoreUl.innerHTML += `\r\n      <li>${data.user} ${data.score}</li>\r\n    `;\r\n  });\r\n  const ul = document.querySelector('.scores');\r\n  ul.appendChild(scoreUl);\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scoreList);\n\n//# sourceURL=webpack://leaderboard/./src/modules/list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst result = [\n  {\n    user: 'Name: ',\n    score: 100,\n  },\n  {\n    user: 'Name: ',\n    score: 20,\n  },\n  {\n    user: 'Name: ',\n    score: 50,\n  },\n  {\n    user: 'Name: ',\n    score: 78,\n  },\n  {\n    user: 'Name: ',\n    score: 125,\n  },\n  {\n    user: 'Name: ',\n    score: 77,\n  },\n  {\n    user: 'Name: ',\n    score: 42,\n  },\n];\n\nconst scoreList = () => {\n  const scoreUl = document.createElement('ul');\n  scoreUl.className = 'scorelist';\n  result.forEach((data) => {\n    scoreUl.innerHTML += `\n      <li>${data.user} ${data.score}</li>\n    `;\n  });\n  const ul = document.querySelector('.scores');\n  ul.appendChild(scoreUl);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scoreList);\n\n//# sourceURL=webpack://leaderboard/./src/modules/list.js?");
 
 /***/ })
 
