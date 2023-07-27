@@ -92,9 +92,12 @@ Enter: git clone git@github.com:George7h/Leaderboard.git in your terminal.
 
 ### Usage
 
-To view website run the local server.
+Run the following commands in the terminal:
 
-Open in browser to view site.
+- npm install
+- npm run dev
+
+The browser will automatically open the website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
