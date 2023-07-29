@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: max-content;
 }
 
 body {
@@ -43,16 +44,16 @@ main {
   box-shadow: 4px 3px 0 0 rgba(0, 0, 0, 0.8);
 }
 
-.contain {
-  display: flex;
-  gap: 5rem;
+.boxing {
   padding: 10px 0 0 20px;
+  gap: 1rem;
 }
 
 .scores {
   gap: 1rem;
   display: flex;
   flex-direction: column;
+  padding-right: 2rem;
 }
 
 .Recent {
@@ -99,4 +100,11 @@ input::placeholder {
 input {
   padding: 4px;
   border: solid 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .boxing {
+    display: flex;
+    gap: 1rem;
+  }
 }
