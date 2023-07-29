@@ -67,7 +67,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]Comming soon!
+- [Live Demo Link]<a href="https://george7h.github.io/Leaderboard/">Click here for live demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,9 +92,12 @@ Enter: git clone git@github.com:George7h/Leaderboard.git in your terminal.
 
 ### Usage
 
-To view website run the local server.
+Run the following commands in the terminal:
 
-Open in browser to view site.
+- npm install
+- npm run dev
+
+The browser will automatically open the website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
