@@ -12,20 +12,49 @@ body {
   font-family: 'Short Stack', cursive;
 }
 
-button {
-  border: solid black 2px;
-  box-shadow: 4px 3px 0 0 rgba(0, 0, 0, 0.8);
-  padding: 4px 2px 2px 2px;
-  font-family: 'Short Stack', cursive;
+h1 {
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6);
 }
 
-button:active {
-  margin: 4px 0 0 4px;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+h2 {
+  text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.4);
+}
+
+.success-message {
+  display: none;
+  color: green;
+  font-family: 'Short Stack', cursive;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 1.5rem 1.5rem 0.6rem;
+  border-radius: 80px;
+  padding: 10px;
+}
+
+button {
+  font-family: 'Short Stack', cursive;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 80px;
+  color: #000;
+  padding: 10px;
+  box-shadow: 0 0 40px 40px rgba(183, 183, 250, 0.9) inset, 0 0 0 0 rgb(133, 133, 243, 0.9);
+  transition: all 0.8s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 40px 0 rgba(20, 51, 189, 0.6) inset, 0 0 15px 10px rgba(122, 122, 239, 0.6);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+    background-color: greenyellow;
+  }
 }
 
 main {
-  margin-top: 20%;
+  margin: 5%;
   gap: 1rem;
   display: flex;
   flex-direction: column;
@@ -39,14 +68,18 @@ main {
   flex-direction: column;
   align-self: center;
   gap: 1rem;
-  padding: 20px 20px 30px 20px;
-  border: solid black 2px;
-  box-shadow: 4px 3px 0 0 rgba(0, 0, 0, 0.8);
+  padding: 2.5rem 5rem 2.5rem 3rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 1.5rem 1.5rem 0.6rem;
+  background-color: rgba(99, 121, 218, 0.975);
+  background-image: linear-gradient(to bottom right, rgba(20, 51, 189, 0.8), rgb(182, 189, 245));
 }
 
 .boxing {
   padding: 10px 0 0 20px;
-  gap: 1rem;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .scores {
@@ -66,19 +99,32 @@ main {
 }
 
 .scorelist {
-  list-style: none;
-  border: solid black 2px;
-  box-shadow: 4px 3px 0 0 rgba(0, 0, 0, 0.8);
+  border: solid rgba(0, 0, 0, 0.2) 0.4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem 0.6rem;
+  border-radius: 10px;
 }
 
 .scorelist > li {
-  display: flex;
-  justify-content: space-between;
-  padding: 3px;
+  padding: 3px 1px 3px 10px;
 }
 
 .scorelist > li:nth-child(even) {
-  background-color: #ddd;
+  background-color: #fff;
+}
+
+.scorelist > li:nth-child(odd) {
+  background-color: #cbcbcbe0;
+  background-image: linear-gradient(to right, lightgrey, lightgrey, white);
+}
+
+.scorelist > li:first-child {
+  border-radius: 10px 10px 0 0;
+  border: #000;
+}
+
+.scorelist > li:last-child {
+  border-radius: 0 0 10px 10px;
+  border: #000;
 }
 
 .addscores {
@@ -98,13 +144,51 @@ input::placeholder {
 }
 
 input {
-  padding: 4px;
-  border: solid 2px;
+  padding: 4px 2px 4px 10px;
+  border: rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.2) 0.5rem 0.5rem 0.3rem;
+  border-radius: 2rem;
+  height: 2.5rem;
+  font-weight: bold;
+  font-family: 'Short Stack', cursive;
+
+  input:focus {
+    border: rgba(0, 0, 0, 0.9);
+    padding: 6px 3px 5px 60px;
+    margin: 10px;
+  }
+}
+
+input[type=text]:focus {
+  font-weight: bold;
+  font-family: 'Short Stack', cursive;
 }
 
 @media screen and (min-width: 768px) {
   .boxing {
     display: flex;
-    gap: 1rem;
+    gap: 8rem;
+    flex-direction: row;
+    padding: 30px;
+  }
+
+  #YourName {
+    transition: 2s;
+    width: 10rem;
+
+    &:hover {
+      border: solid 5px rgba(100, 100, 100, 0.3);
+      width: 12rem;
+    }
+  }
+
+  #YourScore {
+    transition: 2s;
+    width: 10rem;
+
+    &:hover {
+      border: solid 5px rgba(100, 100, 100, 0.3);
+      width: 7rem;
+    }
   }
 }
